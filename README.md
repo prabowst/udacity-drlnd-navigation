@@ -54,13 +54,34 @@ There are several requirements in order to run this project.
 
 ### Training<a name="training"></a>
 
-The notebook Navigation.ipynb can be executed to train an agent. In training the agent, a value based methd is used. This method is called [Deep-Q-Networks](https://deepmind.com/research/publications/human-level-control-through-deep-reinforcement-learning). Depp-Q-Networks or DQN is essentially a Q-learning which exploits neural networks in the process of updating the policy. In addition, the use of replay buffer is also implemented, where the agent can learn from random sample experiences to make not overlook past good actions which did not occur at the right moment.  
+The notebook Navigation.ipynb can be executed to train an agent. In training the agent, a value based method is used. This method is called [Deep-Q-Networks](https://deepmind.com/research/publications/human-level-control-through-deep-reinforcement-learning). Depp-Q-Networks or DQN is essentially a Q-learning which exploits neural networks in the process of updating the policy. In addition, the use of replay buffer is also implemented, where the agent can learn from random sample experiences to make not overlook past good actions which did not occur at the right moment.  
 
 The first training session, the agent uses DQN. This acts as a Q-learning which estimates the best Q value using neural networks. As for the second one, Double-DQN is used in order to address the tendency of DQN of being overoptimistic in values. 
 
+**Execute Navigation.ipynb to train the agent using both DQN and DDQN.**
+
 ### Files<a name="files"></a>
 
-**TO BE FINISHED**
+```
+- Navigation.ipynb # main notebook containing the training process and watching smart agent
+- README.md
+- Report.pdf # report for the project, includes detailed parameters and results/discussions
+
+- dqnbanana
+|- __init__.py 
+|- agent.py # agent class
+|- model.oy # Qnetwork class
+
+- figures
+|- banana.png # environment
+|- scores_episodes_ddqn.png # ddqn scores
+|- scores_episodes_dqn.png # dqn scores
+
+- saved_model
+|- DDQN.pth # model's weight for DDQN
+|- DQN.pth # model's weight for DQN
+
+```
 
 ### Project Results<a name="results"></a>
 
