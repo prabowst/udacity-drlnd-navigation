@@ -70,7 +70,7 @@ The first training session, the agent uses DQN. This acts as a Q-learning which 
 - dqnbanana
 |- __init__.py 
 |- agent.py # agent class
-|- model.oy # Qnetwork class
+|- model.py # Qnetwork class
 
 - figures
 |- banana.png # environment
