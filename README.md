@@ -2,6 +2,8 @@
 
 This project entails a submisison for Udacity's Deep Reinforcement Learning Nanodegree Program: Project 1 - Navigation.
 
+![Env](figures/banana.png)
+
 The project aims to train an agent in navigating a large square world, collecting yellow bananas and avoiding purple bananas.
 
 ### Table of Contents 
